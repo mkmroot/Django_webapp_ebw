@@ -1,0 +1,25 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'logins.css' %}">
+    <title>Password-Reset_Page</title>
+</head>
+<body>
+    <h1> Password Reset Page </h1>
+    <form method="POST">
+        {% csrf_token %}
+        Enter your email Id: <br>
+        <input type="text" placeholder="Enter your ID No." name="e_id"> <br>
+        
+        <input type="submit" value="Sign In" id="submit">
+        {%for msg in messages%}
+        <font color="red">{{msg}}</font>
+        {%endfor%}
+    </form>
+    <p>New User Please <a href="/signup"> Sign up </a></p>
+</body>
+</html>
