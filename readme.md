@@ -2,8 +2,8 @@
 Open CMD
 run:-
 python -m venv djangoenv
-django_venv\Scripts\activate
-python.exe -m pip install --upgreade pip
+djangoenv\Scripts\activate
+python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 cd ebw_project
 python manage.py runserver
