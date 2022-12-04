@@ -4,7 +4,7 @@ run:-
 python -m venv djangoenv
 djangoenv\Scripts\activate
 python.exe -m pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r requirement.txt
 cd ebw_project
 python manage.py runserver
 
